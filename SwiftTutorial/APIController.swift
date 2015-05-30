@@ -32,7 +32,7 @@ class APIController {
     }
     
     func get(path: String) {
-        let url: NSURL  = NSURL(string: path)
+        let url: NSURL  = NSURL(string: path)!
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithURL(url, completionHandler: {data, response, error -> Void in
             println("Task completed")
@@ -42,12 +42,12 @@ class APIController {
             }
             var err: NSError?
             
-            var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as NSDictionary
+            var jsonResult = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &err) as! NSDictionary
             if(err != nil) {
                 // If there is an error parsing JSON, print it to the console
                 println("JSON Error \(err!.localizedDescription)")
             }
-            let results: NSArray = jsonResult["results"] as NSArray
+            let results: NSArray = jsonResult["results"] as! NSArray
             self.delegate.didReceiveAPIResults(jsonResult)
         })
         

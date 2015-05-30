@@ -44,7 +44,7 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
     //Set Up TableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 //        let cell : UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MyTestCell")
-        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier(kCellIdentifier) as UITableViewCell
+        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier(kCellIdentifier) as! UITableViewCell
         let rowData = self.albums[indexPath.row]
 //        cell.textLabel?.text = "Row #\(indexPath.row)"
 //        cell.detailTextLabel?.text = "Subtitle #\(indexPath.row)"
@@ -59,7 +59,7 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
         //Check our image cache for the existing key. This is just a dictionary of UIImages
         var image = self.imageCache[urlString]
         if(image == nil) {
-            var imgURL: NSURL = NSURL(string: urlString)
+            var imgURL: NSURL = NSURL(string: urlString)!
             let request: NSURLRequest = NSURLRequest(URL: imgURL)
             NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: {(response: NSURLResponse!, data: NSData!, error: NSError!) -> Void in
                 if error == nil {
@@ -111,7 +111,7 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
     //Custom methods
     func didReceiveAPIResults(results: NSDictionary) {
         //Moved from funcSearchItunes
-        var resultsArr: NSArray = results["results"] as NSArray
+        var resultsArr: NSArray = results["results"] as! NSArray
         dispatch_async(dispatch_get_main_queue(), {
             self.albums = Album.albumsWithJSON(resultsArr)
             self.appTableView!.reloadData()
@@ -121,7 +121,7 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
 
     //Segue
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var detailsViewController: DetailsViewController = segue.destinationViewController as DetailsViewController
+        var detailsViewController: DetailsViewController = segue.destinationViewController as! DetailsViewController
         var albumIndex = appTableView!.indexPathForSelectedRow()!.row
         var selectedAlbum = self.albums[albumIndex]
         detailsViewController.album = selectedAlbum

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA41875519E0F51B00AE24E9 /* Blank52.png in Resources */ = {isa = PBXBuildFile; fileRef = BA41875419E0F51B00AE24E9 /* Blank52.png */; };
 		BAA401C319E00CAE00152CD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA401C219E00CAE00152CD6 /* AppDelegate.swift */; };
 		BAA401C519E00CAE00152CD6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA401C419E00CAE00152CD6 /* SearchViewController.swift */; };
 		BAA401C819E00CAE00152CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA401C619E00CAE00152CD6 /* Main.storyboard */; };
 		BAA401CA19E00CAE00152CD6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA401C919E00CAE00152CD6 /* Images.xcassets */; };
 		BAA401CD19E00CAE00152CD6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA401CB19E00CAE00152CD6 /* LaunchScreen.xib */; };
 		BAA401D919E00CAE00152CD6 /* SwiftTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA401D819E00CAE00152CD6 /* SwiftTutorialTests.swift */; };
-		BAB2871B19E0881400DBF66E /* Blank52.png in Resources */ = {isa = PBXBuildFile; fileRef = BAB2871A19E0881400DBF66E /* Blank52.png */; };
 		BAB2871D19E08A5A00DBF66E /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2871C19E08A5A00DBF66E /* Album.swift */; };
 		BAB2871F19E08FC600DBF66E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB2871E19E08FC600DBF66E /* DetailsViewController.swift */; };
 		BAF5157E19E03D5F00825504 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF5157D19E03D5F00825504 /* APIController.swift */; };
@@ -30,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA41875419E0F51B00AE24E9 /* Blank52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blank52.png; sourceTree = "<group>"; };
 		BAA401BD19E00CAE00152CD6 /* SwiftTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA401C119E00CAE00152CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAA401C219E00CAE00152CD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +41,6 @@
 		BAA401D219E00CAE00152CD6 /* SwiftTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA401D719E00CAE00152CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAA401D819E00CAE00152CD6 /* SwiftTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTutorialTests.swift; sourceTree = "<group>"; };
-		BAB2871A19E0881400DBF66E /* Blank52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Blank52.png; path = ../../../../../Downloads/Blank52.png; sourceTree = "<group>"; };
 		BAB2871C19E08A5A00DBF66E /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		BAB2871E19E08FC600DBF66E /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		BAF5157D19E03D5F00825504 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		BAA401BF19E00CAE00152CD6 /* SwiftTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				BAB2871A19E0881400DBF66E /* Blank52.png */,
+				BA41875419E0F51B00AE24E9 /* Blank52.png */,
 				BAA401C219E00CAE00152CD6 /* AppDelegate.swift */,
 				BAA401C419E00CAE00152CD6 /* SearchViewController.swift */,
 				BAA401C619E00CAE00152CD6 /* Main.storyboard */,
@@ -205,7 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAA401C819E00CAE00152CD6 /* Main.storyboard in Resources */,
-				BAB2871B19E0881400DBF66E /* Blank52.png in Resources */,
+				BA41875519E0F51B00AE24E9 /* Blank52.png in Resources */,
 				BAA401CD19E00CAE00152CD6 /* LaunchScreen.xib in Resources */,
 				BAA401CA19E00CAE00152CD6 /* Images.xcassets in Resources */,
 			);
